@@ -48,17 +48,6 @@ export class App extends Component<{}, State> {
     window.clearInterval(this.timerId);
   }
 
-  // const today = new Date();
-  // let clockName = 'Clock-0';
-
-  // This code starts a timer
-  // const timerId = window.setInterval(() => {
-  //   clockName = getRandomName();
-  // }, 3300);
-
-  // this code stops the timer
-  // window.clearInterval(timerId);
-
   render() {
     const { hasClock, clockName } = this.state;
 
@@ -67,15 +56,6 @@ export class App extends Component<{}, State> {
         <h1>React clock</h1>
 
         {hasClock && <Clock name={clockName} />}
-        {/* <div className="Clock">
-          <strong className="Clock__name">{clockName}</strong>
-
-          {' time is '}
-
-          <span className="Clock__time">
-            {today.toUTCString().slice(-12, -4)}
-          </span>
-        </div> */}
       </div>
     );
   }
